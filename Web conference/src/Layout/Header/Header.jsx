@@ -1,4 +1,6 @@
 import React from 'react';
+import { IoIosArrowDown } from "react-icons/io";
+
 import './_Header.scss'
 
 function Header() {
@@ -11,11 +13,19 @@ function Header() {
             </div>
             <div className='menu'>
                 <ul>
-                    <li>Home</li>
+                    <li>Home <IoIosArrowDown />
+                    <ul className='sub-menu'>
+                      <li>Home Style01</li>
+                      <li>Home Style01</li>
+                      <li>Home Style01</li>
+                      <li>Home Style01</li>
+                      <li>Home Style01</li>
+                    </ul>
+                    </li>
                     <li>About</li>
-                    <li>Service</li>
-                    <li>Blog</li>
-                    <li>Pages</li>
+                    <li>Service <IoIosArrowDown /></li>
+                    <li>Blog <IoIosArrowDown /></li>
+                    <li>Pages <IoIosArrowDown /></li>
                     <li>Contact</li>
                    
                 </ul>

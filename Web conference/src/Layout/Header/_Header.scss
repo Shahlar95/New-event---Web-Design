@@ -20,10 +20,37 @@ header{
                     li{
                         padding: 0 25px;
                         font-weight: bold;
-                        
+                        color: rgba(0, 0, 0, 0.705);
+                        position: relative;
                         a{
                             padding: 0 25px;
     
+                        }
+                        .sub-menu{
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            left: 0;
+                            top: 100px;
+                            // background-color: red;
+                            width: 180px;
+                            padding: 0px 0;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: .5s linear;
+                            li{
+                                padding: 15px 20px;
+                                border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+                                font-size: small;
+                                &:last-child{
+                                    border: none;
+                                }
+                            }
+                        }
+                        &:hover .sub-menu{
+                            top: 50px;
+                            opacity: 1;
+                            visibility: visible;
                         }
                   }
                 }
@@ -33,6 +60,7 @@ header{
                 align-items: center;
                 .login{
                     font-weight: bold;
+                    color: rgba(0, 0, 0, 0.705);
                 }
                 .signup{
                     padding-left: 30px;
